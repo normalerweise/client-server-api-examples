@@ -27,5 +27,6 @@ Update Product:
       "id": "1",
       "name": "new Name",
       "description": "new Description"
-    }}
+    }
+}
 ```
