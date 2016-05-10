@@ -10,19 +10,22 @@ https://olingo.apache.org/doc/odata4/tutorials/write/tutorial_write.html
 GraphQL Server example using the Sangria library
 Implements the Apache Olingo "Product" tutorial.
 List Products:
-CODE
-`{
+
+```
+{
     "query": "query Example { products {  id name description }  }",
     "operationName": "products"
-}`
+}
+```
 
 Update Product:
-`{
+```
+{
     "query": "mutation Mut($id: String!, $name: String!, $description: String!) { updProduct(id: $id, name: $name, description: $description ) { id name description } }",
     "operationName": "updProduct",
- "variables": {
-   "id": "1",
-   "name": "new Name",
-   "description": "new Description"
-}
-}`
+    "variables": {
+      "id": "1",
+      "name": "new Name",
+      "description": "new Description"
+    }}
+```
